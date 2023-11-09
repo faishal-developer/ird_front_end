@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import {useEffect,useState} from 'react';
+import {useEffect,useState} from 'react'; 
 import { catCardClass } from "@/tailwindClassnames/categoryCard";
 
 
