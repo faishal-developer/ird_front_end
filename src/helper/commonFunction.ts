@@ -15,6 +15,7 @@ export const sortByCategories = (posts: any, subCategories: any) => {
 
 export const fetchData = async (endPoints: string) => {
   const result = await fetch(apiEndPoints.baseUrl + endPoints);
+  console.log(apiEndPoints.baseUrl + endPoints, " tallla");
   return await result.json();
 };
 
