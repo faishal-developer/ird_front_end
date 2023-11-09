@@ -14,7 +14,7 @@ const CategoryCard = ({result,subCategories,post}:{result:any,subCategories:any,
 
     useEffect(()=>{
         setSubcatId(param1)
-        console.log("categories",result);
+        console.log("categories111",result);
     },[])
     return ( 
         <div className={catCardClass.container}>
