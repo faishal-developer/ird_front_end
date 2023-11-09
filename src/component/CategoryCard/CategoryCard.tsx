@@ -14,7 +14,7 @@ const CategoryCard = ({result,subCategories,post}:{result:any,subCategories:any,
 
     useEffect(()=>{
         setSubcatId(param1)
-        console.log("categories111",result);
+        console.log("categories",result,subCategories,post);
     },[])
     return ( 
         <div className={catCardClass.container}>
@@ -43,7 +43,6 @@ const CategoryCard = ({result,subCategories,post}:{result:any,subCategories:any,
                                 <div className={catCardClass.subcat_cont}>
                                     {subCategories?.data?.map((subcat:any)=>(
                                         <>
-                                        {console.log(subcatId,"subcatId")}
                                         <div className={catCardClass.subcat_body} key={subcat._id}>
                                             <div className={catCardClass.subcat_dot}></div>
                                             <Link onClick={()=>setSubcatId(subcat._id)} href={`#${subcat._id}`} className="font-sm">{subcat.title}</Link>
